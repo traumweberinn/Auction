@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Онлайн аукцион – электронная торговая площадка для покупки и продажи товаров путём проведения электронных торгов">
+    <meta name="keywords" content="Аукцион, Онлайн аукцион, Торги">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="Style.css">
+    <title>Регистрация</title>
+</head>
+<body>
+
+<header>
+    <h1>Регистрация</h1>
+</header>
+
+<form>
+    <fieldset>
+        <legend>Личная информация</legend>
+
+        <label for="FirstName">Имя:</label>
+        <input type="text" pattern="^[А-Яа-яЁё]+$" id="FirstName" name="FirstName" required>
+
+        <label for="LastName">Фамилия:</label>
+        <input type="text" pattern="^[А-Яа-яЁё]+$" id="LastName" name="LastName" required>
+
+        <label for="Patronymic">Отчество:</label>
+        <input type="text" pattern="^[А-Яа-яЁё]+$" id="Patronymic" name="Patronymic" required>
+
+        <label for="email">Электронная почта:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Пароль:</label>
+        <input type="password" pattern="/(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{6,}/g" id="password" name="password" required>
+
+        <label for="birthdate">Дата рождения:</label>
+        <input type="date" id="birthdate" name="birthdate" required>
+    </fieldset>
+    <input type="submit" value="Зарегистрироваться">
+</form>
+</body>
+</html>
