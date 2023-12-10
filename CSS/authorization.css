@@ -1,0 +1,132 @@
+/*--ghost-white: #F5F5FA*/
+/*--platinum: #E8E8E8*/
+/*--lavender-web: #DDD8F9*/
+/*--tropical-indigo: #9789E8;*/
+/*--slate-blue: #7564D1;*/
+/*--midnight-blue: #2d2075;*/
+/*--wisteria: #A59CDB;*/
+/*--periwinkle: #BFB8E6*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    font-family: Helvetica, sans-serif;
+    background-color: #9789e8;
+}
+header {
+    padding: 2em 0;
+    background: linear-gradient(180deg, #ddd8f9, #a59cdb, #9789e8);
+    height: 6em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header img {
+    height: 4em;
+    align-items: center;
+}
+.form_box {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+form {
+    margin: 3em 0;
+    width: 20em;
+    border-radius: 2em;
+    background-color: #2d2075;
+    padding: 2em;
+    color: #E8E8E8;
+}
+.form_title {
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: 600;
+}
+fieldset {
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 0.5em;
+    font-size: 0.9em;
+    line-height: 1.25em;
+    border: none;
+}
+fieldset input {
+    width: 90%;
+    border-radius: 0.5em;
+    border: 1px solid #2d2075;
+    outline: 0;
+    background-color: #9789E8;
+    padding: 0.75em 0.75em;
+    margin-bottom: 0.7em;
+    color: #2d2075;
+}
+fieldset input::placeholder {
+    font-size: 1em;
+    color: #DDD8F9;
+}
+fieldset input:focus {
+    border: 1px solid #9789E8;
+}
+fieldset a {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #9789E8;
+    margin: 0.5em 0 0.5em 0;
+    text-decoration: none;
+}
+.sign {
+    margin: 0.5em 0 0 0.9em;
+    padding: 0.75rem;
+    width: 90%;
+    background-color: #7564D1;
+    text-align: center;
+    color: #E8E8E8;
+    border: none;
+    border-radius: 0.5em;
+    font-weight: 500;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+    padding: 0.5em;
+    font-size: 0.9em;
+    color: #9789E8;
+}
+.container a {
+    font-weight: bold;
+    color: #DDD8F9;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+
+
+/*-----------@Media-----------*/
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 1em 0;
+        height: 5em;
+    }
+    header img {
+        height: 2.4em;
+    }
+
+    .form_box {
+        margin-left: 1.3em;
+        width: 90%;
+    }
+    form {
+        margin-top: 1em;
+        padding: 2em;
+    }
+    fieldset input {
+        margin: 0 0 0.7em 1em;
+        width: 80%;
+        display: flex;
+    }
+}

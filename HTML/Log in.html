@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Feilbietung – электронная торговая площадка для покупки и продажи товаров путём проведения электронных торгов">
+    <meta name="keywords" content="Аукцион, Feilbietung, Торги, Главная страница">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="../Pictures/favicon.ico">
+    <link rel="stylesheet" href="../CSS/normalize.css">
+    <link rel="stylesheet" href="../CSS/authorization.css">
+    <script src="../JS/script.js"></script>
+    <script src="../JS/jquery.js"></script>
+  <title>Вход</title>
+</head>
+<body>
+
+<header>
+    <a href="http://localhost:63342/Auction_main/HTML/index.html"><img src="../Pictures/logotype.svg" alt="Feilbietung"></a>
+</header>
+
+<div class="form_box">
+    <form>
+        <p class="form_title">Вход</p>
+        <fieldset>
+            <label for="email"></label>
+            <input placeholder="Email" type="email" id="email" name="email" required>
+
+            <label for="password"></label>
+            <input placeholder="Пароль" type="password" pattern="/(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{6,}/g" id="password" name="password" required>
+
+            <a href="#">Забыли пароль?</a>
+        </fieldset>
+        <button class="sign" onclick="redirectToAccount()">Войти</button>
+
+        <p class="container">Нет аккаунта?
+            <a href="http://localhost:63342/Auction_main/HTML/Register.html">Зарегистрируйтесь</a>
+        </p>
+    </form>
+</div>
+</body>
+</html>

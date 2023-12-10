@@ -1,0 +1,538 @@
+/*--ghost-white: #F5F5FA*/
+/*--platinum: #E8E8E8*/
+/*--lavender-web: #DDD8F9*/
+/*--tropical-indigo: #9789E8;*/
+/*--slate-blue: #7564D1;*/
+/*--midnight-blue: #2d2075;*/
+/*--wisteria: #A59CDB;*/
+/*--periwinkle: #BFB8E6*/
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: #F5F5FA;
+    overflow-x: hidden;
+}
+
+
+/*-----------Header-----------*/
+header {
+    padding: 4em 0;
+    background: linear-gradient(180deg, #ddd8f9, #a59cdb, #9789e8);
+    height: 10em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header img {
+    height: 6em;
+    align-items: center;
+}
+
+nav {
+    padding: 1em 7em;
+    height: 1.5em;
+    background-color: #9789e8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav a {
+    color: #2d2075;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.search {
+    display: flex;
+    text-align: center;
+}
+.search_input {
+    font-family: Helvetica, sans-serif;
+    font-size: 0.95em;
+    background-color: #DDD8F9;
+    border: none;
+    color: #2d2075;
+    padding: 0.5em 1em;
+    border-radius: 2em;
+    width: 15em;
+    margin-right: -2.5em;
+}
+.search_input:focus {
+    outline: none;
+    border: 1px solid #9789E8;
+}
+.search_input::placeholder {
+    color: #7564D1;
+}
+.search_button {
+    border: none;
+    border-radius: 1em;
+    background-color: #ddd8f9;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+.search_button:hover {
+    cursor: pointer;
+}
+.search_icon {
+    height: 1.2em;
+    width: 1.2em;
+    fill: #7564D1;
+}
+
+
+/*-----------Footer-----------*/
+footer {
+    margin-top: 5em;
+    background: linear-gradient(180deg, #7564D1, #2d2075);
+    color: #F5F5FA;
+    padding: 1.875em 1.875em 0.7em 1.875em;
+    border-top-left-radius: 5em;
+    border-top-right-radius: 5em;
+}
+.bottom {
+    color: #F5F5FA;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.bottom p {
+    padding: 0;
+    font-size: 0.95em;
+    font-family: Helvetica, sans-serif;
+}
+.bottom ul {
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    font-size: 0.85em;
+    list-style-type: none;
+}
+.bottom li {
+    line-height: 2em;
+}
+.bottom a {
+    color: #BFB8E6;
+    text-decoration: none;
+}
+.b_text {
+    padding: 1.2em 2.5em 0.7em 2.5em;
+    display: flex;
+    justify-content: space-between;
+    font-family: Helvetica, sans-serif;
+    font-size: 0.85em;
+}
+
+
+/*-----------Main of the main page-----------*/
+.wrapper {
+    margin: 7em 8em;
+    padding: 0 4em;
+    width: 100%;
+}
+.wrapper h2 {
+    margin: 0 0 0.3em 3em;
+    font-size: 2em;
+    font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+    color: #2d2075;
+}
+.carousel {
+    padding-bottom: 2em;
+    position: relative;
+    width: 73%;
+    display: inline-flex;
+    overflow-x: auto;
+    /*scroll-behavior: smooth;*/
+}
+.w_block {
+    display: inline-flex;
+}
+.w_block a {
+    margin: 1.5em 0 0 2em;
+    width: 240px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #2d2075;
+    text-decoration: none;
+}
+.item {
+    margin-bottom: 0.5em;
+    width: 240px;
+    height: 280px;
+    background-color: #2d2075;
+}
+.item img {
+    width: 240px;
+    height: auto;
+    max-height: 280px;
+    object-fit: cover;
+    overflow: hidden;
+}
+.wrapper a p {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+
+/*-----------Catalog-----------*/
+.catalog {
+    margin: 4em 0 6em 0;
+    display: grid;
+    grid-template-columns: repeat(4, 18em);
+    grid-template-rows: repeat(3, 7em);
+    gap: 1.5em;
+    place-content: center;
+    text-align: center;
+    align-items: center;
+}
+.cat_card a {
+    color: #2d2075;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+.card_content {
+    min-height: 5em;
+    background: linear-gradient(90deg, #BFB8E6, #9789E8, #7564D1);
+    border-top-left-radius: 3em;
+    border-bottom-right-radius: 3em;
+}
+.card_content p {
+    padding: 0.8em 2em;
+}
+
+
+/*-----------Catalog sections-----------*/
+.categories {
+    margin: 2em 5em;
+    display: flex;
+    justify-content: space-around;
+}
+.categories_item {
+    padding: 0.1em 1em;
+    height: 3em;
+    width: 10em;
+    background: #2d2075;
+    border-radius: 2em;
+    text-align: center;
+}
+.categories a {
+    color: #F5F5FA;
+    text-decoration: none;
+}
+
+
+/*-----------About Us-----------*/
+.about_us h1 {
+    margin: 2.5em 0 1em 4em;
+    font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #7564D1;
+}
+.about_us p {
+    margin: 1em 10em 0 13em;
+    font-family: Helvetica, sans-serif;
+    font-size: 1.1em;
+    text-align: justify;
+    color: #2d2075;
+}
+.about_us_img {
+    margin-top: 3em;
+    display: flex;
+    justify-content: space-around;
+}
+.about_us_img img {
+    height: 25%;
+    width: auto;
+}
+
+
+/*-----------Contacts-----------*/
+.contacts_text {
+    margin-top: 3em;
+    text-align: center;
+    font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #2d2075;
+}
+.telephone {
+    margin: 2em 22em;
+    display: flex;
+    justify-content: space-around;
+}
+.mail {
+    margin: 2em 13em;
+    display: flex;
+    justify-content: space-around;
+}
+address a {
+    text-decoration: none;
+    color: #F5F5FA;;
+}
+
+
+/*-----------Lot-----------*/
+.lot {
+    margin: 7em 8em;
+    display: inline-grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 5em;
+}
+
+.lot_info h1 {
+    font-size: 2em;
+    font-weight: bold;
+    font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+    color: #2d2075;
+}
+.lot_info_img {
+    margin-bottom: 5em;
+    width: 50em;
+    height: 59em;
+    background-color: #2d2075;
+}
+.lot_info_img img {
+    width: 50em;
+    height: auto;
+    max-height: 59em;
+    object-fit: cover;
+    overflow: hidden;
+}
+.lot_info_description {
+    margin-left: 4em;
+}
+.lot_info_description h3 {
+    font-size: 1.4em;
+    color: #7564D1;
+    font-weight: bold;
+}
+.lot_info_description h4 {
+    font-size: 1em;
+    color: black;
+    font-weight: bold;
+}
+.lot_info_description p {
+    margin-bottom: 2.5em;
+    font-size: 0.9em;
+    color: black;
+}
+
+
+.bidding_window .bidding_time {
+    margin-left: 1.5em;
+    font-size: 1.1em;
+    color: #7564D1;
+    display: flex;
+}
+.bidding_window form{
+    padding: 0.3em 2em;
+    background-color: #ddd8f9;
+    border-radius: 2em;
+}
+.current_bid {
+    margin: 0.7em 0 2em 0;
+    color: #2d2075;
+    font-size: 1.7em;
+}
+form label {
+    margin-left: 0.3em;
+    color: #2d2075;
+}
+form input {
+    margin: 0.3em 0 0.7em 0.3em;
+    width: 90%;
+    border-radius: 1em;
+    border: 1px solid #9789E8;
+    background-color: #9789E8;
+    padding: 0.75em 0.75em;
+    color: #2d2075;
+}
+form input::placeholder {
+    font-size: 1em;
+    color: #DDD8F9;
+}
+form input:focus {
+    border: 1px solid #2d2075;
+    outline: none;
+}
+.bidding_window button {
+    margin: 0 0 1.5em 2em;
+    width: 80%;
+    border-radius: 2em;
+    border: 1px solid #7564D1;
+    outline: 0;
+    background-color: #7564D1;
+    padding: 0.75rem 0.75rem;
+    color: #E8E8E8;
+}
+
+
+
+/*-----------@Media-----------*/
+@media only screen and (max-width: 768px) {
+    /*--------Header--------*/
+    header {
+        padding: 1em 0;
+        height: 5em;
+    }
+    header img {
+        height: 2.4em;
+    }
+
+    nav {
+        padding-top: 3.5em;
+        height: 8.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .search {
+        top: 8em;
+        position: absolute;
+    }
+    .search_input {
+        width: 100%;
+    }
+    .search_button {
+        margin-top: 0.3em;
+        margin-bottom: 0.3em;
+    }
+
+
+    /*--------Main of the main page--------*/
+    .wrapper {
+        margin: 0;
+        padding: 1em;
+    }
+    .wrapper h2 {
+        margin: 1em 0 0 1em;
+        font-size: 1.5em;
+    }
+    .w_block a {
+        margin-left: 3em;
+    }
+
+
+    /*--------Footer--------*/
+    .bottom {
+        margin-left: 1.5em;
+        display: flex;
+        flex-direction: column;
+    }
+    .bottom ul {
+        margin-bottom: 2em;
+    }
+    .bottom li {
+        line-height: 1.8em;
+    }
+    .b_text {
+        padding-left: 1em;
+        justify-content: space-between;
+    }
+
+
+    /*--------Catalog--------*/
+    .catalog {
+        margin-top: 2em;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+    }
+    .card_content {
+        min-height: 5em;
+        width: 14em;
+    }
+
+
+    /*--------Catalog sections--------*/
+    .categories {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 1em;
+    }
+
+
+    /*--------About Us--------*/
+    .about_us h1 {
+        margin: 1em 0 1em 1em;
+    }
+    .about_us p {
+        margin: 1em 1.5em 0 2em;
+    }
+    .about_us_img {
+        margin-top: 2em;
+    }
+    .about_us_img img {
+        height: auto;
+        width: 88%;
+    }
+
+
+    /*-----------Contacts-----------*/
+    .contacts_text {
+        margin-top: 2em;
+        padding: 0 1em;
+        font-size: 1.3em;
+    }
+    .telephone {
+        margin: 1em 0 0 5.5em;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    .mail {
+        margin: 1em 0 0 5.5em;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+
+    /*-----------Lot-----------*/
+    .lot {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+
+    .lot_info h1 {
+        margin: 1em 0 0.5em 1em;
+    }
+    .lot_info_img {
+        margin-bottom: 3em;
+        width: 100%;
+        height: 27.5em;
+    }
+    .lot_info_img img {
+        width: 100%;
+    }
+    .lot_info_description {
+        margin: 0;
+        padding: 0 2em;
+    }
+
+    .bid_time {
+        margin-left: 3.5em;
+    }
+    .bidding_window form{
+        margin: 0 2em;
+    }
+    .current_bid {
+        font-size: 1.5em;
+    }
+    form input {
+        width: 85%;
+    }
+    .bidding_window button {
+        margin-left: 1.5em;
+    }
+}
